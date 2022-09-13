@@ -8,7 +8,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # df = pd.read_excel(r'C:\Users\jwood\OneDrive\Desktop\Work Folder\Work Folder\Project_2\data\Trend_Full_Data_data (1).xlsx')
-filepath1 = os.path.join(Path(__file__).parents[1], 'data\Trend_Full_Data_data (1).xlsx')
+df = os.path.join(Path(__file__).parents[1], 'data\Trend_Full_Data_data (1).xlsx')
 
 def run_app():
     
