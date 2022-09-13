@@ -12,7 +12,7 @@ filepath = os.path.join(Path(__file__).parents[1], 'data\Trend_Full_Data_data (1
 
 def run_app():
     
-    df = pd.read_excel(filepath)
+    df = pd.read_excel(filepath, header = 0)
 
     pht = df[['Complete Date', 'Tech ID', 'PHT Result', 'Region', 'System']]
     wa_pht = pht[pht['Region'] == 'SEATTLE REGION']
