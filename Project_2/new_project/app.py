@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from new_project import pht
+import pht
 
 
 st.title('Seattle PHT Metrics')
