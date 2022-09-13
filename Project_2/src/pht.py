@@ -9,7 +9,7 @@ warnings.filterwarnings("ignore")
 
 # df = pd.read_excel(r'C:\Users\jwood\OneDrive\Desktop\Work Folder\Work Folder\Project_2\data\Trend_Full_Data_data (1).xlsx')
 # filepath= r'C:\Users\Alex Lucchesi\OneDrive\Desktop\pht\Project_2\data\Trend_Full_Data_data (1).xlsx'
-filepath = os.path.join(Path(__file__).parents[2], 'data\Trend_Full_Data_data (1).xlsx')
+filepath = os.path.join(Path(__file__).parents[2], 'data/Trend_Full_Data_data (1).xlsx')
 
 def run_app():
     
