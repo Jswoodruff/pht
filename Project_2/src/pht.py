@@ -17,11 +17,15 @@ def run_app():
     wa_pht = pht[pht['Region'] == 'SEATTLE REGION']
     spokane_pht = wa_pht[wa_pht['System'] == "SPOKANE, WA"]
     sea_pht = wa_pht[wa_pht['System'] != "SPOKANE, WA"]
+    
+
+    pht_fail = sea_pht['PHT Result'].value_counts().sort_index()[0]
+    pht_pass = sea_pht['PHT Result'].value_counts().sort_index()[1]
+    pht_pww = sea_pht['PHT Result'].value_counts().sort_index()[3]
 
 
-    test = sea_pht['PHT Result'].value_counts().sort_index()
 
-    return print(test)
+    return pht_fail, pht_pass, pht_pww
 
 if __name__ == '__main__':
     print(run_app())
