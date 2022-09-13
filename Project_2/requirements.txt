@@ -118,6 +118,8 @@ notebook==6.4.12; python_version >= '3.7'
 
 numpy==1.23.1
 
+openpyxl
+
 packaging==21.3; python_version >= '3.6'
 
 pandas==1.4.3
