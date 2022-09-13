@@ -21,4 +21,4 @@ def run_app():
 
     test = sea_pht['PHT Result'].value_counts().sort_index()
 
-    return test
+    return print(test)
