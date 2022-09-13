@@ -22,3 +22,6 @@ def run_app():
     test = sea_pht['PHT Result'].value_counts().sort_index()
 
     return print(test)
+
+if __name__ == '__main__':
+    print(run_app())
