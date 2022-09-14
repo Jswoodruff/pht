@@ -11,17 +11,17 @@ warnings.filterwarnings("ignore")
 
 # filepath3 = 
 filepath2 = os.path.join(Path(__file__).parents[1], 'data\FICS48HourCallBack(1).xlsx')
-# filepath1 = os.path.join(Path(__file__).parents[1], 'data\TechOps_Responses_20220816_071451.xlsx')
+filepath1 = os.path.join(Path(__file__).parents[1], 'data\TechOps_Responses_20220816_071451.xlsx')
 
 def run_app():
 
     # Tool Usage import
-    # raffle = pd.read_excel(
-    #    filepath1, 
-    #     skiprows=2,
-    #     header=0)
+    raffle = pd.read_excel(
+       filepath1, 
+        skiprows=2,
+        header=0)
     # Select Columns
-    # raffle = raffle[['Tech ID', 'SMS tNPS']]
+    raffle = raffle[['Tech ID', 'SMS tNPS']]
     # Import 48 Hour call back data
     master = pd.read_excel(
         filepath2,
